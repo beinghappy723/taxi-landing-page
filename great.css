@@ -1,0 +1,254 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            line-height: 1.6;
+            /* background: ; */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+
+
+
+        nav {
+            padding: 0.8rem 2rem;
+
+            /* height: 8vh; */
+            box-shadow: 15px 5px 5px rgb(119, 119, 118);
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+            /* justify-content: center; */
+            /* border: 1px solid black; */
+            /* overflow: hidden; */
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            padding: 5px;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+            /* box-shadow: 10 px 5px 5px rgb(252, 239, 239); */
+        }
+
+        ul {
+            list-style: none;
+            /* text-decoration: none; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        a {
+            text-transform: capitalize;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: 0.2s ease;
+
+        }
+
+        a:hover {
+            border: 2px solid rgb(168, 219, 219);
+            /* border: 2px rgb(168, 219, 219); */
+            background-color: rgb(113, 226, 226);
+            /* box-shadow: 8px 5px 5px rgb(177, 250, 25); */
+        }
+
+        .main {
+            background-image: url(./images/info\ taxi.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            object-fit: cover;
+            min-height: 90vh;
+
+            width: auto;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5rem;
+            /* background-color: black; */
+            color: rgb(0, 20, 22);
+            padding: 0.7rem;
+            text-transform: capitalize;
+            text-shadow: 10px 5px 5px rgb(121, 118, 118);
+
+        }
+
+        .main p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 0.9rem;
+            color: rgb(253, 255, 255);
+            padding: 0.2rem;
+            text-shadow: 4px 4px 2px rgb(17, 17, 17);
+        }
+
+        .main button {
+            text-align: center;
+            width: 5rem;
+            border: solid black;
+            border-radius: 7px;
+            background-color: aqua;
+        }
+
+        .main button:hover {
+            background-color: rgb(226, 231, 231);
+
+        }
+
+        .about {
+            background-color: rgb(255, 255, 251);
+            margin: 0.8rem;
+            padding: 4px 2px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 25vw;
+        }
+
+        .about h3 {
+            margin-top: 2px;
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(56, 49, 49);
+            border: 1px solid rgb(240, 240, 243);
+            border-radius: 8px;
+            /* box-shadow: 15px 8px 7px 4px rgb(214, 212, 185); */
+
+            box-shadow: 4px 4px 10px rgba(20, 20, 20, 0.2);
+
+
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(56, 49, 49);
+            border: 1px solid rgb(240, 240, 243);
+            border-radius: 8px;
+            /* box-shadow: 15px 8px 7px 4px rgb(214, 212, 185); */
+
+            box-shadow: 4px 4px 10px rgba(20, 20, 20, 0.2);
+
+        }
+
+        .about h5 {
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(56, 49, 49);
+            border: 1px solid rgb(240, 240, 243);
+            border-radius: 8px;
+            /* box-shadow: 15px 8px 7px 4px rgb(214, 212, 185); */
+
+            box-shadow: 4px 4px 10px rgba(20, 20, 20, 0.2);
+
+        }
+
+        
+.features {
+    margin: 1rem auto;
+    max-width: 1200px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.box {
+    background-color: rgba(197, 224, 197, 0.467);
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Images Control */
+.boximg {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.boximg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Coordinate Mapping */
+.intro {
+    grid-column: 1 / 4; /* Main Heading full row */
+    background-color: #7877;
+}
+
+/* Feature 1 (Left Image + Right Text) */
+.features > div:nth-of-type(1) { /* Pehli Image */
+    grid-column: 1 / 2;
+    grid-row: span 2;
+}
+
+.intro2 {
+    grid-column: 2 / 4;
+}
+
+.intro3 {
+    grid-column: 2 / 4;
+}
+
+/* Feature 2 (Full Header + Split Content) */
+.intro7 {
+    grid-column: 1 / 4; /* Modern fleet title */
+    background-color: #e2f0d9;
+}
+
+.features > div:nth-of-type(2) { /* Doosri Image */
+    grid-column: 1 / 2;
+    min-height: 180px;
+}
+
+.intro4 {
+    grid-column: 2 / 4;
+}
+
+/* Feature 3 (Pricing) */
+.intro5 {
+    grid-column: 1 / 2;
+}
+
+.intro6 {
+    grid-column: 2 / 4; /* Line 1/6 hatakar 2/4 kiya */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+    .features > * {
+        grid-column: 1 / -1 !important;
+        grid-row: auto !important;
+    }
+}
